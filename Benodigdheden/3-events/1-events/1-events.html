@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        button#knop1{
+            background-color:#00ff00;
+        }
+        .zelda{
+            width:960px;
+            height:auto;
+        }
+        #uitvoerveld{
+            margin-top:-100px;
+            font-size:48px;
+            margin-left:100px;
+            color:white;
+        }
+    </style>
+    <title>1 - Events</title>
+</head>
+<body onload="">
+<h2>Klik op de knop en kijk in de console</h2>
+<button onclick="console.log('Joepie! Je hebt op de knop gedrukt')" id="knop1">Click!</button>
+<hr>
+<h2>Klik in het tekstveld</h2>
+<form>
+    <input type="textfield" onfocus="style.backgroundColor = 'yellow'">
+</form>
+<hr>
+<h2>Dubbelklik op dit plaatje</h2>
+<img src="img/zelda1.jpg" ondblclick="document.getElementById('uitvoerveld').innerHTML='antwoord: Zelda'" class="zelda"/>
+<div id="uitvoerveld">Welk spel is dit?</div>
+</body>
+</html>

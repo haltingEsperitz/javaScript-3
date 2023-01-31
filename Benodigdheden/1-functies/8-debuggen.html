@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6 - debuggen</title>
+    <script type="text/javascript">
+        function bereken(){
+            let a =document.getElementById("veld1").value;
+            let b =document.getElementById("veld2").value;
+            let c= a+b;
+            document.getElementById("uitvoerVeld").value = c;
+        }
+    </script>
+    <style>
+        input{
+            margin-bottom:5px;
+        }
+        input:not(#button){
+            width:30px;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Tel op</h1>
+<input type="text" id="veld1">&nbsp;+&nbsp;<input type="text" id="veld2">
+<br>
+<input type="button" value="Reken uit!" onclick="breken()" id="button"><br>
+<input type="text" id="uitvoerVeld">
+</body>
+</html>

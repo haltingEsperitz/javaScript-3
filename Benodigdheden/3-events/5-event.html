@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>5-event</title>
+  <style type="text/css">
+    #result{
+        border:1px solid black;
+        width:500px;
+        height: 100px;
+    }
+</style>
+  <script>
+      function displayWindowSize() {
+          var w = window.outerWidth;
+          var h = window.outerHeight;
+          var txt = "Window size: width=" + w + ", height=" + h;
+          document.getElementById("result").innerHTML = txt;
+      }
+    
+  </script>
+ </head>
+ <body>
+    <p>Resize de browser om hieronder tekst te zien</p>
+    <p id="result"></p>
+ </body>
+</html>

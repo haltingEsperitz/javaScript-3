@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>9-debug eventListener</title>
+  <style type="text/css">
+    #outputVeld{
+        font-size:35px;
+    }
+</style>
+  <script>
+      window.addEventListener("load", function(){
+        let starWars = document.getElementById("starWars");
+        let veld = document.getElementById("outputVeld");  
+
+        starWars.addEventListener("mouseover", function(){
+            veld.innerHTML="Klik op de afbeelding om naar de site te gaan.";
+        });
+        starWars.addEventListener("click", function(){
+            window.open("https://www.starwars.com/");
+        });
+        starWars.addEventListener("mouseout", function(){
+            veld.innerHTML="";
+        });
+
+  </script>
+ </head>
+ <body>
+  <p>Rollover en klik op de afbeelding</p>
+    <img src="star_wars.jpg" id="starWars">
+    <div id="outputVeld"></div>
+ </body>
+</html>
