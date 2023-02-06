@@ -3,4 +3,10 @@ body{
     background-image: url("BG_4k.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    color: #c42e00;
+}
+.buttons{
+    position: absolute;
+    right: 39%;
+    top: 20%;
 }
